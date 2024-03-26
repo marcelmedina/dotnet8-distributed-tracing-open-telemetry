@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B297FDE-CF23-40BA-917A-7329C024C093}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonApi", "src\PersonApi\PersonApi.csproj", "{97FC1015-0C23-47C2-9650-CD1BE7CC328C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonWorker", "src\PersonWorker\PersonWorker.csproj", "{0A01F3FB-2688-4210-B34B-D3EE2ACA608C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97FC1015-0C23-47C2-9650-CD1BE7CC328C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FC1015-0C23-47C2-9650-CD1BE7CC328C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FC1015-0C23-47C2-9650-CD1BE7CC328C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FC1015-0C23-47C2-9650-CD1BE7CC328C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A01F3FB-2688-4210-B34B-D3EE2ACA608C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A01F3FB-2688-4210-B34B-D3EE2ACA608C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A01F3FB-2688-4210-B34B-D3EE2ACA608C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A01F3FB-2688-4210-B34B-D3EE2ACA608C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97FC1015-0C23-47C2-9650-CD1BE7CC328C} = {2B297FDE-CF23-40BA-917A-7329C024C093}
+		{0A01F3FB-2688-4210-B34B-D3EE2ACA608C} = {2B297FDE-CF23-40BA-917A-7329C024C093}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F946209E-A700-421E-A05C-AB43C1447C93}
+	EndGlobalSection
+EndGlobal

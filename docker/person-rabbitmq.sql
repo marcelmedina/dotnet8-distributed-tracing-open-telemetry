@@ -1,0 +1,31 @@
+CREATE DATABASE PersonRabbitMQ
+GO
+
+USE PersonRabbitMQ
+GO
+
+CREATE TABLE dbo.Person(
+    Id INT IDENTITY(1,1) NOT NULL,
+    [Name] VARCHAR(255) NOT NULL,
+    Age INT NOT NULL,
+    [Address] VARCHAR(255) NOT NULL,
+    [Email] VARCHAR(255) NOT NULL,
+    [Date] DATETIME NOT NULL,
+    CONSTRAINT PK_Person PRIMARY KEY (Id)
+)
+GO
+
+CREATE TABLE dbo.Envelope(
+    Id INT IDENTITY(1,1) NOT NULL,
+    PersonId INT NOT NULL,
+    CorrelationId VARCHAR(120) NOT NULL,
+    QueueName VARCHAR(120) NOT NULL,
+    Producer VARCHAR(120) NOT NULL,
+    Consumer VARCHAR(120) NOT NULL,
+    Kernel VARCHAR(80) NOT NULL,
+    Framework VARCHAR(80) NOT NULL,
+    [Date] DATETIME NOT NULL,
+    CONSTRAINT PK_Envelope PRIMARY KEY (Id),
+    CONSTRAINT FK_Person FOREIGN KEY (PersonId) REFERENCES Person(Id)
+)
+GO
